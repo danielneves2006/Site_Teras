@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:CaesarDressing;
+    src: url(font/CaesarDressing-Regular.ttf);
+}
+
+@font-face {
+    font-family:Anton;
+    src: url(font/Anton-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #202020;
+
+}
+body h1{
+    font-family: CaesarDressing;
+    font-size: 4rem;
+    color: #AD997E;
+}
+body p{
+    font-family: Anton;
+    color: #AD997E;
+    font-size: 1.5rem;
+    text-align: center;
+}
+body h2{
+    font-family: CaesarDressing ;
+}
+body a{
+    text-decoration: none;
+}
+/*Nav Menu*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AD997E;
+    padding: 0.7rem;
+    
+
+}
+#navTeras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navElement{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+nav img{
+    width: 4rem ;
+    margin-right: 0.7rem;
+}
+nav a{
+    font-family: CaesarDressing;
+    font-size: 2rem;
+    color:#202020
+}
+nav a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+.navDiv{
+    background-color: #202020;
+    width: 5px ;
+    height: 50px;
+    margin: 0 1rem 0 1rem;
+}
+
+/*Home 1*/
+#home1{
+    padding: 3rem 10rem 3rem 10rem;
+    height: 71vh;
+    background-image: url('img/Home/Page1Background.png'); 
+    background-size: contain; 
+    background-position: bottom; 
+    background-repeat: no-repeat;
+}
+#homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+#home1_1 img{
+    width: 20rem;
+    padding-bottom: 5rem;
+}
+#playTestGiroImg{
+    width: 30rem;
+}
+#seta{
+    width:  5rem;
+}
+#home1_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    gap: 1.5rem;
+
+}
+#home1_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 30rem;
+    margin: 0 5rem 0 5rem;
+}
+
+/*Home 2 - Page1*/
+
+#home2Pag1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #AD997E;
+    background-image: url('img/Home/Page2Background.png'); 
+    background-size: contain; 
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    padding: 2rem 15rem 2rem 7rem ;
+    margin: 0;
+    height: 36.6vw;
+}
+#home2Pag1 h1{
+    color: #202020;
+}
+#home2Pag1 p{
+    color: #202020;
+    font-size: 1.4rem;
+    text-align: left;
+}
+#home2Pag1 img{
+    width: 20rem;
+}
+.RiscoPag1{
+    background-color: #202020;
+    width: auto;
+    height: 5px;
+    margin: 1rem 0 1rem 0;
+}
+#home2Pag1Cont1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 10rem 0 10rem ;
+}
+
+/*Home 2 - Page2*/
+#home2Pag2{
+    background-color: #AD997E;
+    height: 90vh;
+    padding: 5rem;
+}
+
+#home2Pag2 h1{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+#home2Pag2 p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+#home2Pag2Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    grid-template-rows: repeat(4, auto); /* até 4 linhas */
+    grid-auto-flow: column; /* preenche por coluna */
+    gap: 0.7rem;
+    border-radius: 10px;
+    background-color: #6B6254;
+    padding: 3rem;
+}
+.home2Pag2Item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    gap: 1rem;
+}
+#home2Pag2ItemText{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+li{
+    color: #322618;
+    font-size: 1.2rem;
+    font-family: Anton;
+}
+.home2Pag2Item img{
+    width: 10rem;
+}
+/*Home 3*/
+#home3 h1{
+    text-align: center;
+    color: #fff;
+    margin: 3rem;
+}
+#home3Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-rows: repeat(2, auto); /* 2 linhas */
+    gap: 3rem;
+    padding: 0 7rem 0 7rem;
+}
+.home3Item{
+    background-color: #AD997E;
+    width: 20rem;
+    padding: 1.4rem;
+}
+.home3Item p{
+    color: #202020;
+    font-size: 1rem;
+}
+.home3ItemTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #202020;
+    padding-bottom: 1rem;
+}
+.home3ItemTitle img{
+    height: 1.8rem;
+}
+.imgItem3{
+    width: 22.8rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #AD997E;
+    margin-top: 2rem;
+    background-image: url('img/Home/TerasLogoBagroundFooter.png'); 
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
+#infosContainer {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#infosContainer h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#infosContainer p {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+}
+#infosContainer img{
+    width: 35px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.socialMedia:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#teamContainer {
+    text-align: center;
+}
+#teamContainer span{
+    color:#5A4933 ;
+}
+
+#projectsContainer {
+    text-align: left;
+}
+#projectsContainer a{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#projectsContainer a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#contacts p {
+    font-size: 1rem;
+    font-family: Anton;
+    color: #fff
+}
+#contacts span {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #5A4933
+}
+
+#contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.contactsElement{
+    display: flex;
+    gap: 2rem;
+}
+
+/*Animações*/
+.flutuar {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

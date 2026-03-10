@@ -1,0 +1,514 @@
+*{margin: 0%;}
+
+
+@font-face {
+    font-family:'CaesarDressing';
+    src: url(../font/fontCapy/CaesarDressing-Regular.ttf);
+}
+@font-face {
+    font-family:'lemon_milk';
+    src: url(../font/lemon_milk/LEMONMILK-Medium.otf);
+}
+@font-face {
+    font-family:'inter';
+    src: url(../font/inter/Inter_18pt-Black.ttf);
+}
+@font-face {
+    font-family:Anton;
+    src: url(../font/Anton-Regular.ttf);
+}
+@font-face {
+    font-family:TresCapivarinhas;
+    src: url(../font/Trescapivarinhas-Regular.otf);
+}
+
+body{
+    background-color: #423535;
+    color: #fff;
+    overflow-x: hidden; /* Esconde apenas a rolagem horizontal */
+    width: 100%;
+}
+html{
+  overflow-x: hidden;
+  width: 100%;
+}
+h3{
+  font-family: inter;
+  font-size: 1.5rem;
+  color: #AF997A;
+  text-align: start;
+}
+h1{
+  font-family: TresCapivarinhas;
+  font-size: 3rem;
+  color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+/*Nav Menu*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #634A4A;
+    padding: 0.7rem;
+    
+
+}
+#navTeras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navElement{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+nav img{
+    width: 4rem ;
+    margin-right: 0.7rem;
+}
+nav a{
+    font-family: CaesarDressing;
+    font-size: 2rem;
+    color:#202020
+}
+nav a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+.navDiv{
+    background-color: #202020;
+    width: 5px ;
+    height: 50px;
+    margin: 0 1rem 0 1rem;
+}
+/*Page0*/
+#page0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+#page0 img{
+    width: 13rem;
+}
+
+
+#back img{
+  width: 3rem;
+  padding: 0.8rem;
+}
+#back img:hover{
+  transform: scale(1.08);
+  transition: ease-in-out .2s;
+}
+
+.BlocoElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .BlocoElements a{
+    text-decoration: none;
+  }
+  .BlocoElements h1{
+    font-family: TresCapivarinhas;
+    font-size: 5rem;
+    color: #fff;
+    padding-top: 3rem;
+  }
+  .BlocoElements h2{
+    font-family: inter;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .BlocoElements h3{
+    font-family: inter;
+    font-size: 0.8rem;
+    color: #fff;
+    padding-bottom: 1rem;
+  }
+  .BlocoElements p{
+    font-family: inter;
+    font-size: 1.5rem;
+    color: #AF997A;
+    text-align: justify;
+    width: 45rem;
+    padding: 1rem 2rem 4rem 2rem;
+
+  }
+  .BlocoElements img{
+    width: 45rem;
+    padding: 2rem 2rem 0.4rem 2rem;
+  }
+
+  #Faixa{
+    padding-top: 3rem;
+    width: 100vw;
+  }
+  #Faixa img{
+
+    width: 50vw; /* largura total da tela */
+    z-index: 10;
+  }
+
+/* copyrigt */
+.copyrigt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: lemon_milk;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 60px;
+  padding-top: 2rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #634A4A;
+    margin-top: 2rem;
+    background-image: url('img/Home/TerasLogoBagroundFooter.png'); 
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+#infosContainer {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+#infosContainer h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+#infosContainer p {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+}
+#infosContainer img{
+    width: 35px;
+}
+.socialMedia {
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+.socialMedia:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+#socialMediasContainer{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+ }
+#teamContainer {
+    text-align: center;
+}
+#teamContainer span{
+    color:#423320 ;
+}
+#projectsContainer {
+    text-align: left;
+}
+#projectsContainer a{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#projectsContainer a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+#contacts p {
+    font-size: 1rem;
+    font-family: Anton;
+    color: #fff
+}
+#contacts span {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #423320
+}
+#contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.contactsElement{
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media screen and (max-width: 1024px){
+  body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /*Banner*/
+  .BlocoElements h1{
+    font-size: 3rem;
+  }
+  .BlocoElements h2{
+    font-size: 0.8rem;
+  }
+  .BlocoElements p{
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .BlocoElements img{
+    width: 20rem;
+  }
+  /*Ichi.io*/
+  #ichiIO h2{
+    font-size: 2rem;
+  }
+  #ichiIO a{
+    font-size: 2rem;
+  }
+  /*Especificaçõs*/
+  #especificacoes{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-left: 0.8rem;
+    gap: 0.5rem;
+  }
+  #especificacoes img{
+    width: 2.5rem;
+    padding-top: 5rem;
+  }
+  #especificacoes h2{
+    position: relative;
+    top: 10px;
+  }
+  #engine{
+    gap: 0.4rem;
+  }
+  #engine h2{
+    font-size: 1rem;
+  }
+  #estilo{
+    gap: 0.4rem;
+  }
+  #estilo h2{
+    font-size: 1rem;
+  }
+  #design{
+    gap: 0.4rem;
+  }
+  #design h2{
+    font-size: 1rem;
+  }
+
+  /*Especificaçõs*/
+  /*Title Mancha*/
+  .titleMancha{
+    background-image: url(../img/Capy/ink3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .titleMancha h1{
+    font-size: 2rem;
+  }
+  /*Desafio*/
+  #desafio{
+    padding-top: 4rem;
+  }
+  #desafio h3{
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+  /*LevelDesign & GameDesign*/
+  #LevelDesign_GameDesign{
+    flex-direction: column;
+  }
+  #LevelDesign img{
+    width: 20rem;
+  }
+  #LevelDesign h1{
+    font-size: 2rem;
+  }
+  #GameDesignDiv{
+    width: 20rem;
+  }
+  #GameDesign{
+    margin-bottom: 3rem;
+  }
+  #GameDesign img{
+    width: 12rem;
+    border-radius: 10px;
+  }
+  #GameDesign h1{
+    font-size: 2rem;
+  }
+  #GameDesign h3{
+    font-size: 0.75rem;
+    width: 10rem;
+  }
+
+  /*Montagem*/
+  .titleMancha2 h1{
+    padding: 2.5rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  #montagemBloco1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #montagemBloco1_1{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #montagemBloco1 #montagemBloco1_1 #bloco1div1 img{
+    width: 20rem;
+    margin-top: 1.5rem;
+  }
+  #montagemBloco1 #montagemBloco1_1 #bloco1div2 img{
+    width: 20rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+  #montagemBloco1 #montagemBloco1_1 #bloco1div2 h3{
+    text-align: start;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 1rem 2rem 2rem 3rem;
+  }
+  #montagemBloco1_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  #montagemBloco1_2 img{
+    width: 20rem;
+  }
+
+/*Cutscene*/
+#cutscene{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url();
+}
+#cutscene h1{
+  padding: 4rem 4rem 2rem 4rem;
+  text-align: center;
+}
+#cutscene h3{
+    font-size: 1rem;
+    width: 20rem;
+    padding: 2rem 0 2rem 0;
+    text-align: start;
+}
+#cutscene img{
+  width: 20rem;
+}
+
+/*Diário*/
+#DiarioTitle{
+  text-align: center;
+  padding-top: 3rem;
+}
+#Diarioh3{
+  padding: 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Diarioh3 h3{
+  font-size: 1rem;
+  width: 20rem;
+  padding-bottom: 2rem;
+}
+#diario{
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+}
+#diario img{
+  width: 20rem;
+}
+#diario #diarioDiv img{
+  width: 14rem;
+}
+#diario #diarioDiv #diarioGif img{
+  width: 5rem;
+}
+#diarioDiv{
+  flex-direction: row;
+  gap: 1rem;
+}
+
+ /*Dialogo*/
+ #Dialogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#Dialogo h1{
+  text-align: center;
+}
+#Dialogo img{
+  width: 20rem;
+}
+#Dialogo #DialogoDiv img{
+  width: 10rem;
+}
+#Dialogo #DialogoDiv h3{
+  width: 9rem;
+  font-size: 1rem;
+  text-align: start;
+}
+#DialogoDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 1rem;
+  padding-bottom: 10rem;
+}
+}

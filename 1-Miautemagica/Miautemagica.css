@@ -1,0 +1,664 @@
+*{margin: 0%;}
+
+@font-face {
+    font-family:'GentyDemo';
+    src: url(../font/genty/GentyDemo-Regular.otf);
+}
+@font-face {
+    font-family:'lemon_milk';
+    src: url(../font/lemon_milk/LEMONMILK-Medium.otf);
+}
+@font-face {
+    font-family:'inter';
+    src: url(../font/inter/Inter_18pt-Black.ttf);
+}
+@font-face {
+    font-family:CaesarDressing;
+    src: url(../font/CaesarDressing-Regular.ttf);
+}
+@font-face {
+    font-family:Anton;
+    src: url(../font/Anton-Regular.ttf);
+}
+
+
+body{
+    background-color: #5B269D;
+    color: #fff;
+    overflow-x: hidden; /* Esconde apenas a rolagem horizontal */
+
+}
+
+h3{
+  font-family: inter;
+  font-size: 1.5rem;
+  color: #266F7A;
+  text-align: start;
+}
+p{
+    font-family: inter;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: start;
+}
+h1{
+  font-family: GentyDemo;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#back{
+  background-color: #4B8891;
+}
+#back img{
+  width: 3rem;
+  padding: 0.8rem;
+}
+#back img:hover{
+  transform: scale(1.08);
+  transition: ease-in-out .2s;
+}
+/*Nav Menu*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9344AB;
+    padding: 0.7rem;
+    
+
+}
+#navTeras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navElement{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+nav img{
+    width: 4rem ;
+    margin-right: 0.7rem;
+}
+nav a{
+    font-family: CaesarDressing;
+    
+    font-size: 2rem;
+    color: #fff;
+}
+nav a:hover{
+
+    color:#202020;
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+.navDiv{
+    background-color: #fff;
+    width: 5px ;
+    height: 50px;
+    margin: 0 1rem 0 1rem;
+}
+
+/*Bloco Inicial*/
+#CapyRunner{
+  background-image: url(../img/Miautemagica/MainBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #9344AB;
+}
+.BlocoElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .BlocoElements a{
+    text-decoration: none;
+  }
+  .BlocoElements h1{
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .BlocoElements h2{
+    font-family: inter;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .BlocoElements h3{
+    font-size: 0.8rem;
+    color: #fff;
+    padding-bottom: 1rem;
+  }
+  .BlocoElements p{
+    text-align: justify;
+    width: 45rem;
+    padding: 1rem 2rem 4rem 2rem;
+
+  }
+  .BlocoElements img{
+    width: 45rem;
+    padding: 2rem 2rem 0.4rem 2rem;
+  }
+
+  /*ichiIO*/
+  #ichiIO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9344AB;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  #ichiIO h2{
+    font-family: GentyDemo;
+    font-size: 3rem;
+    color: #fff;
+  }
+  #ichiIO a{
+    font-family: GentyDemo;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  #ichiIO a:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+  }
+
+  /*Especificações*/
+  #especificacoes{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 3rem;
+    gap: 8rem;
+    background-image: url(../img/Miautemagica/WhiteBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #especificacoes img{
+    width: 5rem;
+    padding-top: 5rem;
+  }
+  #engine{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #engine h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #9344AB;
+  }
+  #estilo{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #estilo h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #9344AB;
+  }
+  #design{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #design h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #9344AB;
+  }
+/* Gameplay */
+#Gameplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+#Gameplay img{
+  width: 60rem;
+}
+
+/* Conquista e História */
+#ConquistaHistoria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+#conquista{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#conquista img{
+  width: 20rem;
+}
+#historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35rem;
+}
+#historia img{
+  width: 7rem;
+}
+#historia p{
+  text-align: center;
+}
+
+/* Miauquimista */
+#Miauquimistas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+#MiauquimistasImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+#MiauquimistasImg img{
+  width: 45rem;
+}
+#Dance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+#Dance img{
+  width: 20rem;
+}
+/* Img Final */
+#FinalPage{
+  height: 100vh;
+  background-image: url(../img/Miautemagica/FinalBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* copyrigt */
+  .copyrigt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: lemon_milk;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 60px;
+    padding-top: 6rem;
+    color: #fff;
+  }
+
+  /*Footer*/
+footer {
+    background-color: #9344AB;;
+    margin-top: 2rem;
+    background-image: url('img/Home/TerasLogoBagroundFooter.png'); 
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+#infosContainer {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+#infosContainer h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+#infosContainer p {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+}
+#infosContainer img{
+    width: 35px;
+}
+.socialMedia {
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#socialMediasContainer{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+ }
+.socialMedia:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+#teamContainer {
+    text-align: center;
+}
+#teamContainer span{
+    color:#4c1b5b;
+}
+#projectsContainer {
+    text-align: left;
+}
+#projectsContainer a{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#projectsContainer a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+#contacts p {
+    font-size: 1rem;
+    font-family: Anton;
+    color: #fff
+}
+#contacts span {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #4c1b5b;
+}
+#contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.contactsElement{
+    display: flex;
+    gap: 2rem;
+}
+
+  @media screen and (max-width: 1024px){  
+  h3{
+    font-size: 1rem;
+  }
+  p{
+      font-size: 1rem;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  html{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+
+
+  /*Bloco Inicial*/
+    .BlocoElements h1{
+      font-size: 2.5rem;
+    }
+    .BlocoElements h2{
+      font-size: 1rem;
+    }
+    .BlocoElements h3{
+      font-size: 0.8rem;
+    }
+    .BlocoElements p{
+      width: 20rem;
+    }
+    .BlocoElements img{
+      width: 20rem;
+    }
+  
+    /*ichiIO*/
+    #ichiIO{
+      gap: 1rem;
+    }
+    #ichiIO h2{
+      font-size: 2rem;
+    }
+    #ichiIO a{
+      font-size: 2rem;
+    }
+
+    /*Especificações*/
+    #especificacoes{
+      padding-left: 0.8rem;
+      gap: 0.5rem;
+    }
+    #especificacoes img{
+      width: 2.5rem;
+      padding-top: 5rem;
+    }
+    #especificacoes h2{
+      position: relative;
+      top: 10px;
+    }
+    #engine{
+      gap: 0.4rem;
+    }
+    #engine h2{
+      font-size: 0.8rem;
+    }
+    #estilo{
+      gap: 0.4rem;
+    }
+    #estilo h2{
+      font-size: 0.8rem;
+    }
+    #design{
+      gap: 0.4rem;
+    }
+    #design h2{
+      font-size: 0.8rem;
+    }
+
+    /*Desafio*/
+    #desafio h3{
+      width: 20rem;
+    }
+  
+    /*Metodologia*/
+    #metodoABAdiv{
+      flex-direction: column;
+      gap: 0rem;
+    }
+    #metodoABAdiv #bloco1{
+      flex-direction: column;
+      width: 20rem;
+      gap: 3rem;
+    }
+    #metodoABAdiv #bloco1 img{
+      width: 20rem;
+    }
+    #metodoABAdiv #bloco2{
+      width: 20rem;
+    }
+    /*Vídeo*/
+  #video{
+    padding: 4rem;
+    margin: 1rem;
+    background-image: url(../img/DimGon/logoDimGonAzul.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #video img{
+    display: none;
+  }
+
+  /*Bloco de Mecânica com Home*/
+  #mecanicaHome{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #mecanicaHome img{
+    width: 15rem;
+  }
+
+  /*Mecânica*/
+  #mecanicaHome #mecanica{
+    width: 20rem;
+  }
+  #mecanicaHome #mecanica h1{
+    padding-bottom: 2rem;
+  }
+  #mecanicaHome #mecanica h3{
+    padding-bottom: 2rem;
+    padding-left: 0;
+  }
+  /*Home*/
+  #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #mecanicaHome #home{
+    width: 20rem;
+  }
+  #mecanicaHome #home h1{
+    padding-bottom: 2rem;
+  }
+  #mecanicaHome #home h3{
+    padding-bottom: 2rem;
+  }
+  #mecanicaHome #home ul{
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+  }
+
+  /*Minigames*/
+  #Minigames{
+    padding-top: 0rem;
+  }
+  #minigamesImgs img{
+    width: 7rem;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  #Minigames h1{
+    font-size: 2.5rem;
+  }
+  #Minigames h3{
+    width: 22rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  /*Estrelas & LojaPet*/
+  #estrelasLojaPet{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+  }
+  #estrelas{
+    gap: 2rem;
+    width: 20rem;
+
+  }
+  #estrelas img{
+    width: 10rem;
+  }
+  #estrelas  h3{
+    width: 20rem;
+    text-align: justify;
+  }
+  #lojaPet{
+    gap: 2rem;
+    width: 20rem;
+  }
+  #lojaPetImgs{
+
+    gap: 1rem;
+  }
+  #lojaPet img{
+    width: 10rem;
+    height: 22rem;
+  }
+  #lojaPet  h3{
+    width: 20rem;
+    text-align: justify;
+  }
+
+  /*Configuração*/
+  #configuracao{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #configuracao img{
+    width: 15rem;
+  }
+  #configuracaoBloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+  }
+  #configuracaoBloco p{
+    text-align: center;
+    padding-top: 2rem
+  }
+
+  /*futurosMinigames*/
+  #futMinigameImgs{
+    gap: 1rem;
+  }
+  #futurosMinigames #futMinigameImgs img{
+    width: 7rem;
+    height: 15rem;
+  }
+  #futurosMinigamesConteudo{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #futurosMinigamesTextos{
+    flex-direction: row;
+    width: 22rem;
+    gap: 0rem;
+  }
+  #futurosMinigamesTextos h3{
+    text-align: justify;
+  }
+
+  }
