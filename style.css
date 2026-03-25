@@ -372,7 +372,7 @@ footer {
         display: none;
     }
     nav a{
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         padding-bottom: 0.8rem;
     }
     #homeContainer{
@@ -467,8 +467,14 @@ footer {
     footer {
         background-image: none; 
     }
-    #teamContainer, #teamContainer p {
+    footer p{
+        font-size: 0.8rem;
+    }
+    #teamContainer{
     text-align: left;
+    }
+    #teamContainer p {
+        text-align: left;
     }
     #infosContainer {
         flex-direction: column;
@@ -479,13 +485,12 @@ footer {
     #infosContainer h2 {
         font-size: 2rem;
     }
-    #contacts {
-        padding: 1rem;
-    }
-    #contacts h2 {
-        font-size: 2rem;
-    }
-
+#contacts {
+    padding: 1rem;
+}
+#contacts h2 {
+    font-size: 2rem;
+}
 
 
 
