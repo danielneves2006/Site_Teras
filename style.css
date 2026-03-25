@@ -122,7 +122,6 @@ nav a:hover{
 }
 
 /*Home 2 - Page1*/
-
 #home2Pag1{
     display: flex;
     align-items: center;
@@ -169,7 +168,6 @@ nav a:hover{
     height: 90vh;
     padding: 5rem;
 }
-
 #home2Pag2 h1{
     color: #fff;
     padding-bottom: 2rem;
@@ -201,7 +199,7 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
 }
-li{
+#home2 li{
     color: #322618;
     font-size: 1.2rem;
     font-family: Anton;
@@ -214,6 +212,12 @@ li{
     text-align: center;
     color: #fff;
     margin: 3rem;
+}
+#home3 li{
+    color: #202020;
+    font-size: 1.2rem;
+    font-family: Anton;
+    margin-left: 2rem;
 }
 #home3Container{
     display: grid;
@@ -360,4 +364,134 @@ footer {
   100% {
     transform: translateY(0px);
   }
+}
+
+/*Responsividade Celular*/
+@media (max-width: 768px){
+    #TerasNavTitle{
+        display: none;
+    }
+    nav a{
+        font-size: 1.5rem;
+        padding-bottom: 0.8rem;
+    }
+    #homeContainer{
+        flex-direction: column;
+    }
+    /*Home1*/
+    #home1{
+    padding: 3rem 1rem 3rem 1rem;
+    }
+    #home1 h1{
+        font-size: 2rem;
+    }
+    #home1 p{
+        font-size: 1.4rem;
+        width: 20rem;
+    }
+    #home1_1 img{
+        width: 10rem;
+        padding-bottom: 1rem;
+    }
+    #playTestGiroImg{
+        display: none;
+    }
+    /*Home 2 - Page1*/
+    #home2Pag1{
+        background-image: none;
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem ;
+        height: 80vw;
+    }
+    #home2Pag1 h1{
+        font-size: 2rem;
+    }
+    #home2Pag1 p{
+        text-align: center;
+    }
+    #home2Pag1 img{
+        width: 15rem;
+    }
+    #home2Pag1Cont1{
+        padding: 0 1rem 0 1rem ;
+    }
+    /*Home 2 - Page2*/
+    #home2Pag2{
+        height: auto;
+        padding: 90vh 1rem 1rem 1rem;
+    }
+    #home2Pag2 h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    #home2Pag2 p{
+        font-size: 1.2rem;
+    }
+    #home2Pag2Container{
+        grid-template-columns: 1fr; /* 1 colunas */
+        grid-template-rows: repeat(7); /* até 4 linhas */
+        grid-auto-flow: row; /* preenche por coluna */
+        padding: 1rem;
+    }
+    .home2Pag2Item{
+        width: 20rem;
+    }
+    .home2Pag2Item img{
+        width: 7rem;
+    }
+    #home2 li{
+    font-size: 1rem;
+    }
+    /*Home 3*/
+    #home3 h1{
+        font-size: 2rem;
+        margin: 3rem 1rem 3rem 1rem;
+    }
+    #home3Container{
+        grid-template-columns: 1fr; /* 1 coluna */
+        grid-template-rows: repeat(auto);
+        gap: 2rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .home3Item{
+        width: 20rem;
+        padding: 1.2rem;
+    }
+    .home3ItemTitle img{
+        height: 1.8rem;
+    }
+    .imgItem3{
+        width: 22.4rem;
+    }
+    /*Footer*/
+    footer {
+        background-image: none; 
+    }
+    #teamContainer, #teamContainer p {
+    text-align: left;
+    }
+    #infosContainer {
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        gap: 2rem;
+
+    }
+    #infosContainer h2 {
+        font-size: 2rem;
+    }
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+    
+}
+/*Responsividade Tablet*/
+@media (max-width: 1024px){
+    
 }
