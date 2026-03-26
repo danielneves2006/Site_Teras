@@ -278,6 +278,20 @@ footer {
     overflow-x: hidden;
     width: 100%;
   }
+        /*Nav Menu*/
+    #TerasNavTitle{
+        display: none;
+    }
+    nav a{
+        font-size: 1.2rem;
+        padding-bottom: 0.8rem;
+    }
+    #homeContainer{
+        flex-direction: column;
+    }
+    .navDiv{
+    margin: 0 0.5rem 0 0.5rem;
+    }
   /*Banner*/
   .BlocoElements h1{
     font-size: 3rem;
@@ -333,182 +347,45 @@ footer {
   #design h2{
     font-size: 1rem;
   }
+      /*Footer*/
+    footer {
+        background-image: none; 
+    }
+    #teamContainer{
+    text-align: left;
+    }
+    #socialMediasContainer p{
+        font-size: 0.8rem;    
+    }
+    #socialMediasContainer img{
+        width: 1.3rem;    
+    }
+    #teamContainer p {
+        text-align: left; 
+        font-size: 0.8rem;    
+    }
+    #projectsContainer a{
+      font-size: 0.8rem;
+    }
 
-  /*Especificaçõs*/
-  /*Title Mancha*/
-  .titleMancha{
-    background-image: url(../img/Capy/ink3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .titleMancha h1{
-    font-size: 2rem;
-  }
-  /*Desafio*/
-  #desafio{
-    padding-top: 4rem;
-  }
-  #desafio h3{
-    font-size: 1.2rem;
-    width: 20rem;
-  }
-  /*LevelDesign & GameDesign*/
-  #LevelDesign_GameDesign{
-    flex-direction: column;
-  }
-  #LevelDesign img{
-    width: 20rem;
-  }
-  #LevelDesign h1{
-    font-size: 2rem;
-  }
-  #GameDesignDiv{
-    width: 20rem;
-  }
-  #GameDesign{
-    margin-bottom: 3rem;
-  }
-  #GameDesign img{
-    width: 12rem;
-    border-radius: 10px;
-  }
-  #GameDesign h1{
-    font-size: 2rem;
-  }
-  #GameDesign h3{
-    font-size: 0.75rem;
-    width: 10rem;
-  }
+    #infosContainer {
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        gap: 2rem;
 
-  /*Montagem*/
-  .titleMancha2 h1{
-    padding: 2.5rem;
-    font-size: 2rem;
-    margin-top: 1.5rem;
-  }
-  #montagemBloco1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  #montagemBloco1_1{
-    flex-direction: column;
-    gap: 3rem;
-  }
-  #montagemBloco1 #montagemBloco1_1 #bloco1div1 img{
-    width: 20rem;
-    margin-top: 1.5rem;
-  }
-  #montagemBloco1 #montagemBloco1_1 #bloco1div2 img{
-    width: 20rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
-  }
-  #montagemBloco1 #montagemBloco1_1 #bloco1div2 h3{
-    text-align: start;
-    width: 20rem;
-    font-size: 1rem;
-    padding: 1rem 2rem 2rem 3rem;
-  }
-  #montagemBloco1_2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-    padding-bottom: 3rem;
-  }
-  #montagemBloco1_2 img{
-    width: 20rem;
-  }
+    }
+    #infosContainer h2 {
+        font-size: 2rem;
+    }
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+    #contacts span, #contacts p{
+            font-size: 0.8rem;
 
-/*Cutscene*/
-#cutscene{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url();
-}
-#cutscene h1{
-  padding: 4rem 4rem 2rem 4rem;
-  text-align: center;
-}
-#cutscene h3{
-    font-size: 1rem;
-    width: 20rem;
-    padding: 2rem 0 2rem 0;
-    text-align: start;
-}
-#cutscene img{
-  width: 20rem;
-}
-
-/*Diário*/
-#DiarioTitle{
-  text-align: center;
-  padding-top: 3rem;
-}
-#Diarioh3{
-  padding: 0rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Diarioh3 h3{
-  font-size: 1rem;
-  width: 20rem;
-  padding-bottom: 2rem;
-}
-#diario{
-  flex-direction: column;
-  gap: 2rem;
-  padding: 4rem;
-}
-#diario img{
-  width: 20rem;
-}
-#diario #diarioDiv img{
-  width: 14rem;
-}
-#diario #diarioDiv #diarioGif img{
-  width: 5rem;
-}
-#diarioDiv{
-  flex-direction: row;
-  gap: 1rem;
-}
-
- /*Dialogo*/
- #Dialogo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-#Dialogo h1{
-  text-align: center;
-}
-#Dialogo img{
-  width: 20rem;
-}
-#Dialogo #DialogoDiv img{
-  width: 10rem;
-}
-#Dialogo #DialogoDiv h3{
-  width: 9rem;
-  font-size: 1rem;
-  text-align: start;
-}
-#DialogoDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  gap: 1rem;
-  padding-bottom: 10rem;
-}
+    }
+ 
 }

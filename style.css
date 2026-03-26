@@ -368,15 +368,19 @@ footer {
 
 /*Responsividade Celular*/
 @media (max-width: 768px){
+      /*Nav Menu*/
     #TerasNavTitle{
         display: none;
     }
     nav a{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         padding-bottom: 0.8rem;
     }
     #homeContainer{
         flex-direction: column;
+    }
+    .navDiv{
+    margin: 0 0.5rem 0 0.5rem;
     }
     /*Home1*/
     #home1{
@@ -418,7 +422,7 @@ footer {
     /*Home 2 - Page2*/
     #home2Pag2{
         height: auto;
-        padding: 90vh 1rem 1rem 1rem;
+        padding: 100vh 1rem 1rem 1rem;
     }
     #home2Pag2 h1{
         font-size: 2.5rem;
@@ -463,19 +467,27 @@ footer {
     .imgItem3{
         width: 22.4rem;
     }
-    /*Footer*/
+      /*Footer*/
     footer {
         background-image: none; 
-    }
-    footer p{
-        font-size: 0.8rem;
     }
     #teamContainer{
     text-align: left;
     }
-    #teamContainer p {
-        text-align: left;
+    #socialMediasContainer p{
+        font-size: 0.8rem;    
     }
+    #socialMediasContainer img{
+        width: 1.3rem;    
+    }
+    #teamContainer p {
+        text-align: left; 
+        font-size: 0.8rem;    
+    }
+    #projectsContainer a{
+      font-size: 0.8rem;
+    }
+
     #infosContainer {
         flex-direction: column;
         padding: 1rem 1rem 1rem 1rem;
@@ -485,16 +497,16 @@ footer {
     #infosContainer h2 {
         font-size: 2rem;
     }
-#contacts {
-    padding: 1rem;
-}
-#contacts h2 {
-    font-size: 2rem;
-}
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+    #contacts span, #contacts p{
+            font-size: 0.8rem;
 
-
-
-    
+    }
 }
 /*Responsividade Tablet*/
 @media (max-width: 1024px){

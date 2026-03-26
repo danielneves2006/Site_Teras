@@ -324,3 +324,107 @@ footer {
     }
 
 }
+
+/*Responsividade Celular*/
+@media (max-width: 768px){
+      /*Nav Menu*/
+    #TerasNavTitle{
+        display: none;
+    }
+    nav a{
+        font-size: 1.2rem;
+        padding-bottom: 0.8rem;
+    }
+    #homeContainer{
+        flex-direction: column;
+    }
+    .navDiv{
+    margin: 0 0.5rem 0 0.5rem;
+    }
+    /*Page0*/
+    #page0 img{
+        width: 7rem;
+    }
+    #page0 h1{
+        font-size: 2rem;
+    }
+
+    /*Page1*/
+    .carousel{
+        gap:0.5rem;
+    }
+    .carousel-container{
+        gap:0.5rem;
+    }
+    .esquerda img,.direita img{
+        width:4rem;
+    }
+    .centro img{
+        width:8rem;    
+    }
+    .seta img{
+        width:1rem;
+    }
+
+    /*Page2*/
+    #divisao{
+        height: 3rem;
+    }
+    #page2 h1{
+        font-size: 1.3rem;
+    }
+    #page2 p{
+        font-size: 0.8rem;
+    }
+    .container{
+        width: 10rem;
+        margin: 1rem;
+        gap: 1rem;
+    }
+    .gameCard img{
+        width: 10rem;
+    }
+    .gameCardBig img{
+        width: 20rem;
+    }
+
+    /*Footer*/
+    footer {
+        background-image: none; 
+    }
+    #teamContainer{
+    text-align: left;
+    }
+    #socialMediasContainer p{
+        font-size: 0.8rem;    
+    }
+    #socialMediasContainer img{
+        width: 1.3rem;    
+    }
+    #teamContainer p {
+        text-align: left; 
+        font-size: 0.8rem;    
+    }
+    #projectsContainer a{
+      font-size: 0.8rem;
+    }
+    #infosContainer {
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        gap: 2rem;
+
+    }
+    #infosContainer h2 {
+        font-size: 2rem;
+    }
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+    #contacts span, #contacts p{
+            font-size: 0.8rem;
+
+    }
+}

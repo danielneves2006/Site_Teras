@@ -198,3 +198,78 @@ footer {
     display: flex;
     gap: 2rem;
 }
+/*Responsividade Celular*/
+@media (max-width: 1024px){
+      /*Nav Menu*/
+    #TerasNavTitle{
+        display: none;
+    }
+    nav a{
+        font-size: 1.2rem;
+        padding-bottom: 0.8rem;
+    }
+    #homeContainer{
+        flex-direction: column;
+    }
+    .navDiv{
+    margin: 0 0.5rem 0 0.5rem;
+    }
+    /*Page0*/
+    #page0 img{
+        width: 7rem;
+    }
+    #page0 h1{
+        font-size: 2rem;
+    }
+
+    /*Eventos*/
+    .eventosContainer img{
+        width: 20rem;
+        margin-bottom: 5rem;
+    }
+    .eventosContainer h1{
+        font-size: 2rem;
+    }
+
+
+    /*Footer*/
+    footer {
+        background-image: none; 
+    }
+    #teamContainer{
+    text-align: left;
+    }
+    #socialMediasContainer p{
+        font-size: 0.8rem;    
+    }
+    #socialMediasContainer img{
+        width: 1.3rem;    
+    }
+    #teamContainer p {
+        text-align: left; 
+        font-size: 0.8rem;    
+    }
+    #projectsContainer a{
+      font-size: 0.8rem;
+    }
+
+    #infosContainer {
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        gap: 2rem;
+
+    }
+    #infosContainer h2 {
+        font-size: 2rem;
+    }
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+    #contacts span, #contacts p{
+            font-size: 0.8rem;
+
+    }
+}

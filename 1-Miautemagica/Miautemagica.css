@@ -432,7 +432,20 @@ footer {
     width: 100%;
   }
 
-
+      /*Nav Menu*/
+    #TerasNavTitle{
+        display: none;
+    }
+    nav a{
+        font-size: 1.4rem;
+        padding-bottom: 0.8rem;
+    }
+    #homeContainer{
+        flex-direction: column;
+    }
+    .navDiv{
+    margin: 0 0.5rem 0 0.5rem;
+    }
 
   /*Bloco Inicial*/
     .BlocoElements h1{
@@ -456,209 +469,135 @@ footer {
       gap: 1rem;
     }
     #ichiIO h2{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     #ichiIO a{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     /*Especificações*/
-    #especificacoes{
-      padding-left: 0.8rem;
-      gap: 0.5rem;
-    }
-    #especificacoes img{
-      width: 2.5rem;
-      padding-top: 5rem;
-    }
-    #especificacoes h2{
-      position: relative;
-      top: 10px;
-    }
-    #engine{
-      gap: 0.4rem;
-    }
-    #engine h2{
-      font-size: 0.8rem;
-    }
-    #estilo{
-      gap: 0.4rem;
-    }
-    #estilo h2{
-      font-size: 0.8rem;
-    }
-    #design{
-      gap: 0.4rem;
-    }
-    #design h2{
-      font-size: 0.8rem;
-    }
+  #especificacoes{
+    width: auto;
+    padding: 1rem;
+    gap: 0rem;
 
-    /*Desafio*/
-    #desafio h3{
-      width: 20rem;
-    }
-  
-    /*Metodologia*/
-    #metodoABAdiv{
-      flex-direction: column;
-      gap: 0rem;
-    }
-    #metodoABAdiv #bloco1{
-      flex-direction: column;
-      width: 20rem;
-      gap: 3rem;
-    }
-    #metodoABAdiv #bloco1 img{
-      width: 20rem;
-    }
-    #metodoABAdiv #bloco2{
-      width: 20rem;
-    }
-    /*Vídeo*/
-  #video{
-    padding: 4rem;
-    margin: 1rem;
-    background-image: url(../img/DimGon/logoDimGonAzul.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
-  #video img{
-    display: none;
+  #especificacoes img{
+    width: 3rem;
+    padding-top: 3rem;
   }
-
-  /*Bloco de Mecânica com Home*/
-  #mecanicaHome{
+  #engine{
     flex-direction: column;
-    gap: 2rem;
-  }
-  #mecanicaHome img{
-    width: 15rem;
-  }
-
-  /*Mecânica*/
-  #mecanicaHome #mecanica{
-    width: 20rem;
-  }
-  #mecanicaHome #mecanica h1{
-    padding-bottom: 2rem;
-  }
-  #mecanicaHome #mecanica h3{
-    padding-bottom: 2rem;
-    padding-left: 0;
-  }
-  /*Home*/
-  #home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #mecanicaHome #home{
-    width: 20rem;
-  }
-  #mecanicaHome #home h1{
-    padding-bottom: 2rem;
-  }
-  #mecanicaHome #home h3{
-    padding-bottom: 2rem;
-  }
-  #mecanicaHome #home ul{
-    padding-bottom: 0rem;
-    padding-left: 0rem;
-  }
-
-  /*Minigames*/
-  #Minigames{
-    padding-top: 0rem;
-  }
-  #minigamesImgs img{
-    width: 7rem;
-    padding: 2rem 0.5rem 1rem 0.5rem;
-  }
-  #Minigames h1{
-    font-size: 2.5rem;
-  }
-  #Minigames h3{
-    width: 22rem;
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  /*Estrelas & LojaPet*/
-  #estrelasLojaPet{
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5rem;
-  }
-  #estrelas{
-    gap: 2rem;
-    width: 20rem;
-
-  }
-  #estrelas img{
-    width: 10rem;
-  }
-  #estrelas  h3{
-    width: 20rem;
-    text-align: justify;
-  }
-  #lojaPet{
-    gap: 2rem;
-    width: 20rem;
-  }
-  #lojaPetImgs{
-
-    gap: 1rem;
-  }
-  #lojaPet img{
-    width: 10rem;
-    height: 22rem;
-  }
-  #lojaPet  h3{
-    width: 20rem;
-    text-align: justify;
-  }
-
-  /*Configuração*/
-  #configuracao{
-    flex-direction: column;
-    gap: 2rem;
-  }
-  #configuracao img{
-    width: 15rem;
-  }
-  #configuracaoBloco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20rem;
-  }
-  #configuracaoBloco p{
-    text-align: center;
-    padding-top: 2rem
-  }
-
-  /*futurosMinigames*/
-  #futMinigameImgs{
-    gap: 1rem;
-  }
-  #futurosMinigames #futMinigameImgs img{
-    width: 7rem;
-    height: 15rem;
-  }
-  #futurosMinigamesConteudo{
-    flex-direction: column;
-    gap: 2rem;
-  }
-  #futurosMinigamesTextos{
-    flex-direction: row;
-    width: 22rem;
     gap: 0rem;
   }
-  #futurosMinigamesTextos h3{
-    text-align: justify;
+  #engine h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
   }
+  #estilo{
+    flex-direction: column;
+    gap: 0rem;
+  }
+  #estilo h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  #design{
+  width: 6rem ;
+  flex-direction: column;
+    gap: 0rem;
+  }
+  #design h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }  
+  /* Gameplay */
+  #Gameplay{
+    gap: 1rem;
+  }
+  #Gameplay img{
+    width: 22rem;
+  }
+
+  /* Conquista e História */
+  #ConquistaHistoria{
+    flex-direction: column;
+  }
+  #conquista{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #conquista img{
+    width: 20rem;
+  }
+  #historia {
+    width: 22rem;
+  }
+  #historia img{
+    width: 3rem;
+  }
+  #historia p{
+    width: 22rem;
+  }
+
+  /* Miauquimista */
+  #Miauquimistas{
+    flex-direction: column;
+    padding: 5rem 0 5rem 0;
+  }
+  #MiauquimistasImg img{
+    width: 22rem;
+  }
+  #Dance img{
+    width: 18rem;
+  }
+  /* Img Final */
+  #FinalPage{
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+      /*Footer*/
+    footer {
+        background-image: none; 
+    }
+    #teamContainer{
+    text-align: left;
+    }
+    #socialMediasContainer p{
+        font-size: 0.8rem;    
+    }
+    #socialMediasContainer img{
+        width: 1.3rem;    
+    }
+    #teamContainer p {
+        text-align: left; 
+        font-size: 0.8rem;    
+    }
+    #projectsContainer a{
+      font-size: 0.8rem;
+    }
+    #infosContainer {
+        flex-direction: column;
+        padding: 1rem ;
+        gap: 2rem;
+    }
+    #infosContainer h2 {
+        font-size: 2rem;
+    }
+    #contacts {
+        padding: 1rem;
+    }
+    #contacts h2 {
+        font-size: 2rem;
+    }
+    #contacts span, #contacts p{
+            font-size: 0.8rem;
+
+    }
 
   }
