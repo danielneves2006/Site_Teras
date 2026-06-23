@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CapyRunner.css'>
     <link rel="icon" type="image/x-icon" href="../img/pataCapy.png">
+    <script src='../script.js'></script>
 </head>
 <body>
     
@@ -22,6 +23,11 @@
                 <div class="navDiv" id="TerasNavTitle"></div>
             </div>
 
+            <button id="menuHamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div id="navElement">
                 <div class="navDiv" ></div>
                 <a href="/Projetos/projetos.html">Projetos</a>
@@ -29,6 +35,8 @@
                 <a href="/Eventos/eventos.html">Eventos</a>
                 <div class="navDiv"></div>
                 <a href="/Equipe/equipe.html">Equipe</a>
+                <div class="navDiv"></div>
+                <a href="../index.html#faleConosco">Fale Conosco</a>
             </div>
         </nav>
 
@@ -167,10 +175,6 @@
             </div>
         </div>
 
-        <p class="copyrigt">
-            © 2025 - Todos os direitos reservados
-        </p>
-        
                 <!-- Rodapé -->
         <footer>
             <section id="infosContainer">
@@ -215,12 +219,38 @@
                 </div>
                 <div class="contactsElement">
                     <span>Email</span>
-                    <p>terasstudio08@gamil.com</p>
+                    <p>terasstudio08@gmail.com</p>
                 </div>
+                <button id="btnAbrirForm">Enviar Mensagem</button>
             </section>
+            <div id="footerCopyright">
+                <p>© 2025 Téras Studio — Todos os direitos reservados</p>
+            </div>
         </footer>
-        
+
     </header>
 
+        <!-- Modal Fale Conosco -->
+        <div id="modalOverlay">
+            <div id="modal">
+                <button id="modalFechar">&times;</button>
+                <h2>Enviar Mensagem</h2>
+                <form id="faleConoscoForm">
+                    <div class="formGroup">
+                        <label for="formNome">Nome</label>
+                        <input type="text" id="formNome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formEmail">Email</label>
+                        <input type="email" id="formEmail" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formMensagem">Mensagem</label>
+                        <textarea id="formMensagem" placeholder="Sua mensagem..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="formBtn">Enviar</button>
+                </form>
+            </div>
+        </div>
 </body>
 </html>
