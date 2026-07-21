@@ -1,5 +1,4 @@
-*{margin: 0%; box-sizing: border-box;}
-img { max-width: 100%; height: auto; }
+*{margin: 0%;}
 
 @font-face {
     font-family:CaesarDressing;
@@ -59,10 +58,8 @@ nav{
     justify-content: space-between;
     background-color: #634A4A;
     padding: 0.7rem;
-    position: relative;
-}
-#menuHamburger {
-    display: none;
+    
+
 }
 #navTeras{
     display: flex;
@@ -94,120 +91,6 @@ nav a:hover{
     height: 50px;
     margin: 0 1rem 0 1rem;
 }
-
-/*Modal*/
-#modalOverlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-#modalOverlay.ativo {
-    display: flex;
-}
-#modal {
-    background-color: #2A2A2A;
-    border: 2px solid #AD997E;
-    border-radius: 8px;
-    padding: 2.5rem;
-    width: 90%;
-    max-width: 35rem;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-#modal h2 {
-    font-family: CaesarDressing;
-    color: #AD997E;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-#modalFechar {
-    position: absolute;
-    top: 0.8rem;
-    right: 1.2rem;
-    background: none;
-    border: none;
-    color: #AD997E;
-    font-size: 2.2rem;
-    cursor: pointer;
-    line-height: 1;
-    font-family: Anton;
-}
-#modalFechar:hover { color: #fff; }
-#faleConoscoForm {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-.formGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-.formGroup label {
-    font-family: CaesarDressing;
-    color: #AD997E;
-    font-size: 1.2rem;
-}
-.formGroup input,
-.formGroup textarea {
-    background-color: #202020;
-    border: 2px solid #AD997E;
-    border-radius: 4px;
-    color: #fff;
-    font-family: Anton;
-    font-size: 1rem;
-    padding: 0.7rem 1rem;
-    outline: none;
-    resize: vertical;
-    width: 100%;
-    box-sizing: border-box;
-}
-.formGroup input:focus,
-.formGroup textarea:focus { border-color: #fff; }
-#formBtn {
-    background-color: #AD997E;
-    border: none;
-    color: #202020;
-    cursor: pointer;
-    font-family: CaesarDressing;
-    font-size: 1.5rem;
-    padding: 0.7rem 2rem;
-    align-self: flex-end;
-    transition: background-color 0.2s;
-}
-#formBtn:hover { background-color: #fff; }
-#btnAbrirForm {
-    background-color: #AD997E;
-    border: none;
-    color: #202020;
-    cursor: pointer;
-    font-family: CaesarDressing;
-    font-size: 1.2rem;
-    padding: 0.6rem 1.5rem;
-    margin-top: 1rem;
-    transition: background-color 0.2s;
-}
-#btnAbrirForm:hover { background-color: #fff; }
-#footerCopyright {
-    text-align: center;
-    padding: 1rem 2rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
-}
-#footerCopyright p {
-    font-family: Anton;
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-}
-
 /*Page0*/
 #page0{
     display: flex;
@@ -508,54 +391,7 @@ footer {
         flex-direction: column;
     }
     .navDiv{
-        display: none;
-    }
-    #menuHamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 6px;
-    }
-    #menuHamburger span {
-        display: block;
-        width: 26px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 3px;
-        transition: transform 0.3s, opacity 0.3s;
-    }
-    #menuHamburger.aberto span:nth-child(1) {
-        transform: rotate(45deg) translate(5.5px, 5.5px);
-    }
-    #menuHamburger.aberto span:nth-child(2) {
-        opacity: 0;
-    }
-    #menuHamburger.aberto span:nth-child(3) {
-        transform: rotate(-45deg) translate(5.5px, -5.5px);
-    }
-    #navElement {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: center;
-        background-color: #634A4A;
-        padding: 0.8rem 0;
-        gap: 0.8rem;
-        z-index: 100;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.35);
-    }
-    #navElement.aberto {
-        display: flex;
-    }
-    nav a {
-        font-size: 1.3rem;
-        padding: 0.2rem 1rem;
+    margin: 0 0.5rem 0 0.5rem;
     }
   /*Banner*/
   .BlocoElements h1{
