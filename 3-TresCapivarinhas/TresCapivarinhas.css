@@ -6,6 +6,10 @@
     src: url(../font/fontCapy/CaesarDressing-Regular.ttf);
 }
 @font-face {
+    font-family:'TresCapivarinhas';
+    src: url(../font/Trescapivarinhas-Regular.otf);
+}
+@font-face {
     font-family:'lemon_milk';
     src: url(../font/lemon_milk/LEMONMILK-Medium.otf);
 }
@@ -16,10 +20,6 @@
 @font-face {
     font-family:Anton;
     src: url(../font/Anton-Regular.ttf);
-}
-@font-face {
-    font-family:TresCapivarinhas;
-    src: url(../font/Trescapivarinhas-Regular.otf);
 }
 
 body{
@@ -39,8 +39,13 @@ h3{
   text-align: start;
 }
 h1{
-  font-family: TresCapivarinhas;
+  font-family: CaesarDressing;
   font-size: 3rem;
+  color: #fff;
+}
+h2{
+  font-family: CaesarDressing;
+  font-size: 2rem;
   color: #fff;
 }
 a{
@@ -87,6 +92,8 @@ nav a:hover{
     height: 50px;
     margin: 0 1rem 0 1rem;
 }
+
+
 /*Page0*/
 #page0{
     display: flex;
@@ -110,7 +117,7 @@ nav a:hover{
   transition: ease-in-out .2s;
 }
 
-.BlocoElements{
+  .BlocoElements{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,16 +159,174 @@ nav a:hover{
     width: 45rem;
     padding: 2rem 2rem 0.4rem 2rem;
   }
-
-  #Faixa{
-    padding-top: 3rem;
-    width: 100vw;
+  #CapyRunner{
+    background-image: url('../img/TresCapivarinhas/TresCapyBG.png');
   }
-  #Faixa img{
-
-    width: 50vw; /* largura total da tela */
-    z-index: 10;
+  /*Ichi.io*/
+  
+  #ichiIO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #634A4A;
+    padding: 1rem;
+    gap: 2rem;
   }
+  #ichiIO h2{
+    font-family: TresCapivarinhas;
+    font-size: 3rem;
+    color: #fff;
+  }
+  #ichiIO a{
+    font-family: TresCapivarinhas;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  #ichiIO a:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+  }
+  /*Especificaçõs*/
+  #especificacoes{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 8rem;
+  }
+  #especificacoes img{
+    width: 5rem;
+    padding-top: 5rem;
+  }  
+  #engine{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #engine h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #estilo{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #estilo h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #design{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+  }
+  #design h2{
+    padding-top: 4rem;
+    font-family: inter;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  /*Bloco1*/
+/* =========================================
+   RESET BÁSICO PARA GARANTIR ALINHAMENTO
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block; /* Remove espaços indesejados abaixo das imagens */
+}
+
+/* =========================================
+   BLOCO 1 (DESKTOP)
+   ========================================= */
+#bloco1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem principal e o grid */
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Primeira imagem cobrindo 70% e centralizada */
+#B1Container1 {
+    width: 70%;
+    padding-top: 5rem;
+}
+
+#B1Container1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Grid 2x2 com a mesma largura da primeira imagem (70%) */
+#B1Container2 {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    gap: 20px; /* Espaço entre as imagens do grid */
+}
+
+#B1Container2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   BLOCO 2 (DESKTOP)
+   ========================================= */
+#bloco2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+#bloco2 p{
+font-family: TresCapivarinhas;
+font-size: 2.5rem;
+line-height: 3rem;
+}
+
+/* Container 1: 5 partes (p = 2 partes, img = 3 partes) */
+#B2Container1 {
+    width: 80%; /* Largura geral da seção para respiro lateral */
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Divide em 5 frações: 2 pro texto, 3 pra imagem */
+    align-items: center;
+    gap: 30px;
+}
+
+/* Container 2: 3 partes invertidas (img = 1 parte, p = 2 partes) */
+#B2Container2 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 fração pra imagem, 2 pro texto */
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 2rem;
+}
+
+/* Última imagem cobrindo 50% centralizada */
+#B2Img1 {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+
+
 
 /* copyrigt */
 .copyrigt{
@@ -173,7 +338,6 @@ nav a:hover{
   font-size: 0.8rem;
   position: relative;
   bottom: 60px;
-  padding-top: 2rem;
 }
 
 /*Footer*/
@@ -228,7 +392,7 @@ footer {
     text-align: center;
 }
 #teamContainer span{
-    color:#423320 ;
+    color:#422d28 ;
 }
 #projectsContainer {
     text-align: left;
@@ -260,7 +424,7 @@ footer {
 #contacts span {
     font-size: 1.3rem;
     font-family: Anton;
-    color: #423320
+    color: #422d28;
 }
 #contacts h2 {
     font-family: CaesarDressing;
@@ -278,12 +442,12 @@ footer {
     overflow-x: hidden;
     width: 100%;
   }
-        /*Nav Menu*/
+      /*Nav Menu*/
     #TerasNavTitle{
         display: none;
     }
     nav a{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding-bottom: 0.8rem;
     }
     #homeContainer{
@@ -294,7 +458,7 @@ footer {
     }
   /*Banner*/
   .BlocoElements h1{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .BlocoElements h2{
     font-size: 0.8rem;
@@ -313,41 +477,81 @@ footer {
   #ichiIO a{
     font-size: 2rem;
   }
-  /*Especificaçõs*/
+    /*Especificações*/
   #especificacoes{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding-left: 0.8rem;
-    gap: 0.5rem;
+    width: auto;
+    padding: 1rem;
+    gap: 0.8rem;
+
   }
   #especificacoes img{
-    width: 2.5rem;
-    padding-top: 5rem;
-  }
-  #especificacoes h2{
-    position: relative;
-    top: 10px;
+    width: 3rem;
+    padding-top: 3rem;
   }
   #engine{
-    gap: 0.4rem;
+    flex-direction: column;
+    gap: 0rem;
   }
   #engine h2{
+    text-align: center;
+    padding-top: 1rem;
     font-size: 1rem;
   }
   #estilo{
-    gap: 0.4rem;
+    flex-direction: column;
+    gap: 0rem;
   }
   #estilo h2{
+    text-align: center;
+    padding-top: 1rem;
     font-size: 1rem;
   }
   #design{
-    gap: 0.4rem;
+  width: 6rem ;
+  flex-direction: column;
+    gap: 0rem;
   }
   #design h2{
+    text-align: center;
+    padding-top: 1rem;
     font-size: 1rem;
-  }
-      /*Footer*/
+  }  
+  /*Blocos*/
+   /* --- Ajustes Bloco 1 --- */
+    #B1Container1,
+    #B1Container2 {
+        width: 90%; /* Aumenta um pouco no mobile/tablet para melhor visualização */
+    }
+
+    /* Transforma o grid 2x2 em 1 coluna com imagens grandes */
+    #B1Container2 {
+        grid-template-columns: 1fr; 
+    }
+
+    /* --- Ajustes Bloco 2 --- */
+    #B2Container1,
+    #B2Container2 {
+        width: 100%;
+        padding: 0 25px; /* Padding das paredes da página */
+        display: flex;
+        flex-direction: column; /* Transforma em coluna comum */
+        gap: 20px;
+    }
+
+    /* Garante que parágrafos e imagens tenham a mesma largura (100% do container com padding) */
+    #B2Container1 p,
+    #B2Container1 img,
+    #B2Container2 p,
+    #B2Container2 img {
+        width: 100%;
+    }
+
+    /* Ajuste opcional para a última imagem não ficar minúscula no celular */
+    #B2Img1 {
+        width: 80%; 
+    }
+
+    /*Footer*/
     footer {
         background-image: none; 
     }
@@ -367,7 +571,6 @@ footer {
     #projectsContainer a{
       font-size: 0.8rem;
     }
-
     #infosContainer {
         flex-direction: column;
         padding: 1rem 1rem 1rem 1rem;
@@ -387,5 +590,4 @@ footer {
             font-size: 0.8rem;
 
     }
- 
 }
