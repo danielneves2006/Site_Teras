@@ -261,8 +261,8 @@ img {
 
 /* Primeira imagem cobrindo 70% e centralizada */
 #B1Container1 {
-    width: 70%;
-    padding-top: 5rem;
+    width: 50%;
+    padding-top: 8rem;
 }
 
 #B1Container1 img {
@@ -272,7 +272,7 @@ img {
 
 /* Grid 2x2 com a mesma largura da primeira imagem (70%) */
 #B1Container2 {
-    width: 70%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
     gap: 20px; /* Espaço entre as imagens do grid */
@@ -301,7 +301,7 @@ line-height: 3rem;
 
 /* Container 1: 5 partes (p = 2 partes, img = 3 partes) */
 #B2Container1 {
-    width: 80%; /* Largura geral da seção para respiro lateral */
+    width: 70%; /* Largura geral da seção para respiro lateral */
     display: grid;
     grid-template-columns: 2fr 3fr; /* Divide em 5 frações: 2 pro texto, 3 pra imagem */
     align-items: center;
@@ -310,7 +310,7 @@ line-height: 3rem;
 
 /* Container 2: 3 partes invertidas (img = 1 parte, p = 2 partes) */
 #B2Container2 {
-    width: 80%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 2fr; /* 1 fração pra imagem, 2 pro texto */
     align-items: center;
